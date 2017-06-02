@@ -91,7 +91,7 @@ module PagSeguro
     def request
       @request ||= Aitch::Namespace.new
       @request.configure do |config|
-        config.timeout = 50 
+        config.timeout = 100 
       end
       @request
     end
